@@ -1,0 +1,63 @@
+main {
+  display: none;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  animation-name: appear;
+  animation-duration: 0.4s;
+}
+
+main > div {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid #0088ff;
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.283);
+  animation-name: appear;
+  animation-duration: 0.4s;
+}
+
+main > div > img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+main > div > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 248, 255, 0.271);
+  color: black;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%, 100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+main > div > img:hover {
+  transform: scale(1.4);
+}
+
+main > div > img:hover ~ div,
+main > div > div:hover {
+  transform: translate(0%, 0%);
+}
+
+/* main > div,
+main > div > img,
+main > div > div {
+  border-radius: 100%;
+} */

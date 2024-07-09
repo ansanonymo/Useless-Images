@@ -1,0 +1,36 @@
+.pagination {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  gap: 30px;
+}
+
+.pagination div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pagination button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0088ff;
+  color: aliceblue;
+  cursor: pointer;
+  animation-name: appear;
+  animation-duration: 0.4s;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  background-color: #003f75;
+}

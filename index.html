@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useless Images</title>
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/pagination.css" />
+    <link rel="stylesheet" href="./style/loader.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div>
+        <div class="loader"></div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <h1 class="header" id="header">Useless Images</h1>
+    <div id="slider" class="slider">
+      <button class="close" id="close-button">X</button>
+      <button id="slider-prev"><</button>
+      <img
+        id="slider-img"
+        src="https://via.placeholder.com/600/d32776"
+        alt="title"
+      />
+      <button id="slider-next">></button>
+    </div>
+    <main class="main" id="main"></main>
+
+    <div class="pagination" id="pagination">
+      <button id="first-button" disabled>First</button>
+      <button disabled id="prev-button">Prev</button>
+      <div id="page-button-group">
+        <button disabled>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+      </div>
+      <button id="next-button">Next</button>
+      <button id="last-button">Last</button>
+    </div>
+    <script src="./js/make.js"></script>
+    <script src="./js/object.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

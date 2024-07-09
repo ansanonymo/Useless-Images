@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+  background-color: aliceblue;
+  color: #353637;
+  user-select: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::-moz-focus-inner,
+*::-moz-focus-outer {
+  outline: none;
+}
+
+body {
+  position: relative;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
